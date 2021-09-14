@@ -1,0 +1,32 @@
+.header ul{
+    list-style:none;
+    font-size: larger;
+}
+.header ul li{
+    text-decoration: none;
+}
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer ul {
+    list-style: none;
+    display: inline;
+}
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    padding: 1.35rem;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
