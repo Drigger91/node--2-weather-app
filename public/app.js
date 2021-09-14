@@ -12,7 +12,7 @@ searchForm.addEventListener('submit' , (event)=>{
     event.preventDefault()
     const location = address.value
     loading.textContent = 'Loading... Please wait'
-    fetch('http://localhost:3000/weather?address='+encodeURIComponent(location)).then(
+    fetch('/weather?address='+encodeURIComponent(location)).then(
     (response)=>{
         response.json().then(
             (data)=>{

@@ -1,6 +1,7 @@
 const path = require('path')
 const express = require("express")
 const app = express()
+const port = process.env.PORT || 3000
 const hbs = require('hbs')
 
 //paths and config
@@ -67,6 +68,6 @@ app.get('/help' , (req , res)=>{
 app.get('*', (req,res)=>{
      res.render('error')
 })
-app.listen(3000 , ()=>{
+app.listen(port , ()=>{
     console.log('server is up and running')
 }) // starts your application
